@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from "./pages/Home.tsx";
-import DetailPage from "./pages/Detail.tsx";
+import HomePage from "./pages/HomePage.tsx";
+import DetailPage from "./pages/DetailPage.tsx";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/movie/:slug" element={<DetailPage />} />
       </Routes>
     </Router>
