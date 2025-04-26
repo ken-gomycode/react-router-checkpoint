@@ -3,7 +3,7 @@ import MovieCard from "../components/MovieCard.tsx";
 import movies from "../movies.json";
 import {Movie} from "../types.ts";
 
-const Home = () => {
+const HomePage = () => {
   const navigate = useNavigate();
 
   const openMovieDetail = (movie: Movie) => {
@@ -19,4 +19,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default HomePage;
